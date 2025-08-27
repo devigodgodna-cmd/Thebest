@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olypassss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0; 
+            background-color: #000000;
+        }
+        #loading-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #000000; 
+            gap: 2rem;
+        }
+
+        .loader {
+            display: flex; 
+            gap: 8px; 
+            width: 250px; 
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .loader .block {
+            width: 30px; 
+            height: 30px; 
+            background-color: #25d366;
+            border-radius: 4px; 
+            animation: blockLoad 1.5s infinite ease-in-out; 
+        }
+
+        .loader .block:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        .loader .block:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        .loader .block:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        .loader .block:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes blockLoad {
+            0%, 100% {
+                transform: scaleY(0.4); 
+                opacity: 0.6; 
+            }
+            50% {
+                transform: scaleY(1); 
+                opacity: 1;
+            }
+        }
+        .loader-image {
+           
+        }
+                 b {
+    color: green; 
+  }
+    </style>
+</head>
+<body class="bg-black">
+
+    <div id="loading-page">
+        <!-- Image Logo -->
+        <img src="https://i.imgur.com/lZE0z7b.png" alt="Olympus.com Logo" class="loader-image w-64 h-64 object-contain">
+        
+        <!-- Loader (Block by Block Animation) -->
+        <div class="loader">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        
+        <p class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-400">ກຳລັງນຳທ່ານໄປຍັງ  <b> WhatsApp..</b></p>
+    </div>
+
+    <script>
+      
+        setTimeout(function() {
+        
+            window.location.href = "https://wa.me/8562054325803?";
+        }, 2000); 
+    </script>
+
+</body>
+</html>
+
+
+
+
